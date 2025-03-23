@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../lib/Card";
 import Forest from "../../assets/Forest.jpg";
-import Education from "../../assets/education.jpg";
+
 import cleanRiver from "../../assets/cleanRiver.jpg";
 import work from "../../assets/work.jpg";
 import Button from "../../lib/Button";
@@ -33,7 +33,7 @@ const SeventhPage = () => {
             </div>
             <div className="flex flex-col sm:flex-row justify-evenly gap-4">
               <Card
-                imageUrl={Education}
+                imageUrl={cleanRiver}
                 title="Environmental Education"
                 description="Partnering with forest departments, we deploy surveillance drones and patrol units to prevent illegal hunting in protected zones."
               />
