@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import trust from "../../assets/Trust.png";
+import trust from "../../assets/trust.png";
 import india from "../../assets/India.png";
 import WTI from "../../assets/WTI.png";
 import facebook from "../../assets/Facebook.png";
-import instagram from "../../assets/instagram.png";
+import instagram from "../../assets/Instagram.png";
 import twitter from "../../assets/twitter.png";
 import Form from "../../lib/Form";
 import Earth from "../../assets/LogoEarth.png";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.png";
 import Button from "../../lib/Button";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";

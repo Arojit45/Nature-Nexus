@@ -1,7 +1,7 @@
 import React from "react";
 import Tiger from "../../assets/royal-bengal-tigers-need-more-conservation-efforts.jpg";
 import Rino from "../../assets/onehorn.webp";
-import Elephant from "../../assets/AsianElephant.jpg";
+import Elephant from "../../assets/onehorn.webp";
 import SnowLeopard from "../../assets/snowleopard.jpg";
 
 const Content = () => {
