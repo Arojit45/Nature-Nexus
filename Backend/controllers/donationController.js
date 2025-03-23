@@ -1,3 +1,5 @@
+const Donation = require("../models/Donation.model");
+
 exports.submitDonation = async (req, res) => {
   const { fullName, panCard, amount } = req.body;
 
@@ -8,10 +10,16 @@ exports.submitDonation = async (req, res) => {
   }
 
   try {
-    // For now, just log the donation details
-    console.log("📝 Donation Received:", { fullName, panCard, amount });
+    // Save the donation to the database
+    const donation = new Donation({
+      fullname: fullName,
+      pancard: panCard,
+      amount,
+    });
 
-    // You could save to a database here (e.g., MongoDB)
+    await donation.save();
+
+    console.log("📝 Donation Saved:", donation);
 
     res.status(200).json({ success: true, message: "Payment successful" });
   } catch (error) {
