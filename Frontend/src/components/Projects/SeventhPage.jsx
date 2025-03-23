@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../lib/Card";
 import Forest from "../../assets/Forest.jpg";
+import Education from "../../assets/education.jpg";
 import cleanRiver from "../../assets/cleanRiver.jpg";
 import work from "../../assets/work.jpg";
 import Button from "../../lib/Button";
@@ -26,19 +27,19 @@ const SeventhPage = () => {
               />
               <Card
                 imageUrl={cleanRiver}
-                title="Forest Conservation"
+                title="River Clean-Up"
                 description="Our dedicated rescue teams have saved and treated over 2,300 wild animals, providing medical care and safe rehabilitation back into the wild."
               />
             </div>
             <div className="flex flex-col sm:flex-row justify-evenly gap-4">
               <Card
                 imageUrl={Education}
-                title="Forest Conservation"
+                title="Environmental Education"
                 description="Partnering with forest departments, we deploy surveillance drones and patrol units to prevent illegal hunting in protected zones."
               />
               <Card
                 imageUrl={cleanRiver}
-                title="Forest Conservation"
+                title="Community Outreach"
                 description="Through workshops and school programs, we've educated more than 80,000 students about sustainability, biodiversity, and climate action."
               />
             </div>
