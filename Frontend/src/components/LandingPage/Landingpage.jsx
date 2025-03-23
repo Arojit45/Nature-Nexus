@@ -23,7 +23,7 @@ const LandingPage = () => {
       <SecondPage />
       <ThirdPage />
       <FourthPage />
-      {/* <FifthPage /> */}
+      <FifthPage />
       <SixthPage />
       <SeventhPage />
       <EightPage />

@@ -1,8 +1,5 @@
-import React, { use, useEffect } from "react";
-import Earthhello from "../../assets/earth-forest_1001175-52494.avif";
-import SectionPart from "./SectionPart";
+import React from "react";
 import Nav from "./Nav";
-import Forest12 from "../../assets/forest12.jpg";
 import first from "../../assets/first.jpg";
 import DButton from "../DonationForm/DButton";
 

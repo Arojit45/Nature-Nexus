@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Arrow from "../../assets/arrow.png";
+
 
 const SecondPage = () => {
   
