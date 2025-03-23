@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../../lib/Card";
 import Forest from "../../assets/Forest.jpg";
-import Education from "../../assets/education.jpg";
 import cleanRiver from "../../assets/cleanRiver.jpg";
 import work from "../../assets/work.jpg";
 import Button from "../../lib/Button";
@@ -26,7 +25,7 @@ const SeventhPage = () => {
                 description="We’ve launched reforestation missions in degraded areas by planting over 5,000 native trees, restoring habitats for wildlife and improving local air quality."
               />
               <Card
-                imageUrl={Education}
+                imageUrl={cleanRiver}
                 title="Forest Conservation"
                 description="Our dedicated rescue teams have saved and treated over 2,300 wild animals, providing medical care and safe rehabilitation back into the wild."
               />
