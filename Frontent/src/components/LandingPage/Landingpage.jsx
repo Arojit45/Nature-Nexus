@@ -18,7 +18,7 @@ const LandingPage = () => {
   // const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="w-full min-h-screen bg-[#F2F1F6] text-white">
+    <div className="w-full   min-h-screen bg-[#F2F1F6] text-white">
       <Firstpage />
       <SecondPage />
       <ThirdPage />

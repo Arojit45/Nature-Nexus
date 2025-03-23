@@ -164,7 +164,7 @@ const SixthPage = () => {
         </div>
 
         {/* Right Sticky Image Section — Hidden on small & large, visible on xl+ */}
-        <div className="hidden xl:block w-full max-w-[600px] mx-auto h-[2100px] px-4">
+        <div className="hidden sm:block w-[600px]    xl:block  max-w-[600px] mx-auto h-[2100px] px-4">
           <div
             className="w-full sticky top-[24rem] h-[300px] sm:h-[350px] md:h-[400px] rounded-xl overflow-hidden shadow-xl"
             ref={imageContainerRef}
