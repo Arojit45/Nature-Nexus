@@ -42,8 +42,8 @@ const Nav = () => {
         <Link to="#" className="links">
           About Us
         </Link>
-        <Link to="#" className="links">
-          Membership & Giving
+        <Link to="/wildmap" className="links">
+          Map
         </Link>
       </div>
 
