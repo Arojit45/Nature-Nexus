@@ -1,16 +1,31 @@
 import React, { useRef, useState } from "react";
-import work from "../../assets/work.jpg";
-import work2 from "../../assets/work2.jpg";
-import work3 from "../../assets/work3.webp";
-import work4 from "../../assets/work4.jpg";
-import Forest from "../../assets/Forest.jpg";
 
 const info = [
-{title: "Royal Bengal Tiger Spotted in Restored Reserve",image: work ,},
-{title: "10,000+ Trees Planted in a Single Day",image: work2,},
-{title: "Local Student Wins National Eco-Champion Award",image: work3 ,},
-{title: "Elephant Family Reunited After Rescue",image: work4 ,},
-{title: "Clean River Campaign Removes 2 Tons of Waste",image: Forest ,},
+  {
+    title: "Royal Bengal Tiger Spotted in Restored Reserve",
+    image:
+      "https://www.tigersafari.net/wp-content/uploads/2023/06/Bengal-tiger-in-kanha-national-park-India.webp",
+  },
+  {
+    title: "10,000+ Trees Planted in a Single Day",
+    image:
+      "https://www.theblackgardenerblog.co.uk/wp-content/uploads/2019/12/10000-Trees-Planted-at-The-Young-Peoples-Forest.jpg",
+  },
+  {
+    title: "Local Student Wins National Eco-Champion Award",
+    image:
+      "https://himalayainternational.in/wp-content/uploads/2024/07/452750407_404358839418484_6665014934892841812_n.jpg",
+  },
+  {
+    title: "Elephant Family Reunited After Rescue",
+    image:
+      "https://www.africanparks.org/sites/default/files/styles/inline_image_style/public/teaser_image/2018-10/42582155_10156212961658411_5967738211751952384_o%202_0.jpg?itok=9m6eu0OJ",
+  },
+  {
+    title: "Clean River Campaign Removes 2 Tons of Waste",
+    image:
+      "https://thebalisun.com/wp-content/uploads/2023/03/Four-Teenagers-Clean-Up-Balis-Rivers.jpg.webp",
+  },
 ];
 
 const Blog = () => {

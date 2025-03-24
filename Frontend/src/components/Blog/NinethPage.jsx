@@ -2,8 +2,10 @@ import React from "react";
 import work from "../../assets/work.jpg";
 import Blog from "./Blog";
 import Button from "../../lib/Button";
+import { Link } from "react-router-dom";
 
 const NinethPage = () => {
+  
   return (
     <div className="w-full mt-10 p-2 flex justify-center items-center bg-[#F2F1F6]">
       <div className="w-full relative gap-1 p-4 bg-green-200 flex flex-col justify-between items-center rounded-xl">
@@ -32,11 +34,13 @@ const NinethPage = () => {
         </div>
 
         {/* View More Button */}
-        <div className="mt-6 relative w-full">
-          <div className="bg-[#F2F1F6] absolute top-[100%] left-1/2 transform -translate-x-1/2 p-3 w-[180px] sm:w-[210px] h-[50px] sm:h-[60px] rounded-xl flex justify-center items-center">
-            <Button title="View more" />
+        <Link to={"/news"}>
+          <div className="mt-6 relative w-full">
+            <div className="bg-[#F2F1F6] absolute top-[100%] left-1/2 transform -translate-x-1/2 p-3 w-[180px] sm:w-[210px] h-[50px] sm:h-[60px] rounded-xl flex justify-center items-center">
+              <Button title="View more" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

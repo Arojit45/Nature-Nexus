@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import Button from "../../lib/Button";
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -40,9 +42,10 @@ const Form = () => {
   };
 
   return (
+    
     <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6 mt-10">
       <h2 className="text-2xl font-bold mb-6 text-center text-slate-800">
-        Donate to NatureNexus
+        Donate to Wildlife
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -92,6 +95,11 @@ const Form = () => {
           {successMessage}
         </p>
       )}
+      <Link to={"/"}>
+        <div className="w-[200px] h-[50px] sm:w-[250px] sm:h-[60px] mt-10 mx-auto">
+          <Button title={"Back"} />
+        </div>
+      </Link>
     </div>
   );
 };

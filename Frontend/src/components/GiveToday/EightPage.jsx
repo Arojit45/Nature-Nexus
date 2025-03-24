@@ -32,7 +32,7 @@ const EightPage = () => {
 
         {/* Button */}
         <div className="w-full flex justify-center lg:justify-start lg:absolute lg:top-[500px] lg:left-28 mt-4 lg:mt-0">
-          <Link to={"/"}>
+          <Link to={"/donation"}>
             <div className="w-40 h-12 text-xl text-black rounded-xl">
               <Button title="Give Today" />
             </div>

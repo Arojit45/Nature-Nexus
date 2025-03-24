@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import work from "../../assets/work.jpg";
-import work2 from "../../assets/work2.jpg";
-import work3 from "../../assets/work3.webp";
+const impact1 =
+  "https://assets.telegraphindia.com/telegraph/2023/Apr/1681728047_tiger.jpg";
+const impact2 ="https://www.budgetdumpster.com/images/river-cleanup-clean-479x300.jpg";
+const impact3 = "https://www.green.earth/hs-fs/hubfs/080824_Reforestation-projects-around-the-world-success-stories-and-lessons-learnedVisual-8.png?width=1200&height=800&name=080824_Reforestation-projects-around-the-world-success-stories-and-lessons-learnedVisual-8.png";
+const impact4 = "https://cdn.shopify.com/s/files/1/1317/9597/files/Cebu_flowerpecker_Dicaeum_quadricolor_480x480.jpg?v=1623745246";
+const impact5 =
+  "https://mena.iom.int/sites/g/files/tmzbdl686/files/styles/large/public/press_release/media/20210305-8H1A9250.jpg?itok=KpjxieNW";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,11 +19,11 @@ const SixthPage = () => {
   const imageContainerRef = useRef();
 
   const images = [
-    { src: work, alt: "Work Image 1" },
-    { src: work2, alt: "Work Image 2" },
-    { src: work3, alt: "Work Image 3" },
-    { src: work2, alt: "Work Image 4" },
-    { src: work, alt: "Work Image 5" },
+    { src: impact1, alt: "Work Image 1" },
+    { src: impact2, alt: "Work Image 2" },
+    { src: impact3, alt: "Work Image 3" },
+    { src: impact4, alt: "Work Image 4" },
+    { src:impact5, alt: "Work Image 5" },
   ];
 
   const redSectionContent = [

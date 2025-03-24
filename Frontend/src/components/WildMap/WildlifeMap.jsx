@@ -156,19 +156,18 @@ const WildlifeMap = () => {
 
         {/* Form as a fixed bottom modal */}
         {showForm && formLocation && (
-          <div className="fixed bottom-0 left-0 w-full bg-white p-4 shadow-lg z-10 transition-all transform duration-300 ease-in-out">
-            <h3 className="text-xl font-semibold mb-4">Report a Sighting</h3>
+          <div className="fixed bottom-5 rounded-xl left-20 w-[500px] bg-white p-4 shadow-lg z-10 transition-all transform duration-300 ease-in-out">
             <ReportSightingForm
               formData={formData}
               setFormData={setFormData}
               handleSubmit={handleSubmit}
             />
-            <button
+            <div
+              className="w-[100px] h-[50px] bg-red-600 rounded-xl flex items-center justify-center"
               onClick={() => setShowForm(false)}
-              className="mt-3 text-red-600 hover:text-red-800"
             >
-              Close
-            </button>
+              <button className="text-white hover:text-black">Close</button>
+            </div>
           </div>
         )}
       </div>

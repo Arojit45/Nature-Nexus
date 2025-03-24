@@ -5,8 +5,14 @@ import Forest from "../../assets/Forest.jpg";
 import cleanRiver from "../../assets/cleanRiver.jpg";
 import work from "../../assets/work.jpg";
 import Button from "../../lib/Button";
+import { Link } from "react-router-dom";
+const surveillance =
+  "https://imgs.mongabay.com/wp-content/uploads/sites/30/2024/08/19111002/3_drone-flying_credit_Dax_Pandhi-768x512.jpeg";
+const community =
+  "https://www.unesco.org/sites/default/files/styles/paragraph_medium_desktop/article/2023-12/climate%20change%20education%20at%20cop28.jpg?itok=Vokm0jCr";
 
 const SeventhPage = () => {
+  
   return (
     <div className="w-full bg-[#F2F1F6] p-2">
       <div className="min-h-screen gap-6 p-5 bg-green-200 mt-5 flex flex-col rounded-xl">
@@ -33,12 +39,12 @@ const SeventhPage = () => {
             </div>
             <div className="flex flex-col sm:flex-row justify-evenly gap-4">
               <Card
-                imageUrl={cleanRiver}
+                imageUrl={surveillance}
                 title="Environmental Education"
                 description="Partnering with forest departments, we deploy surveillance drones and patrol units to prevent illegal hunting in protected zones."
               />
               <Card
-                imageUrl={cleanRiver}
+                imageUrl={community}
                 title="Community Outreach"
                 description="Through workshops and school programs, we've educated more than 80,000 students about sustainability, biodiversity, and climate action."
               />
@@ -52,9 +58,11 @@ const SeventhPage = () => {
               src={work}
               alt="Work"
             />
-            <div className="w-[200px] h-[55px] pt-2 pl-2 rounded-tl-xl absolute bottom-0 right-0 bg-green-200 flex items-center justify-end">
-              <Button title="View more" />
-            </div>
+            <Link to={"/projects"}>
+              <div className="w-[200px] h-[55px] pt-2 pl-2 rounded-tl-xl absolute bottom-0 right-0 bg-green-200 flex items-center justify-end">
+                <Button title="View more" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

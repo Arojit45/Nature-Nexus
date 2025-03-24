@@ -33,7 +33,7 @@ const EleventhPage = () => {
   const [showForm, setShowForm] = useState(false);
   return (
     <div className="w-full  min-h-screen p-4 sm:p-6 flex justify-center items-center bg-[#F2F1F6]">
-      <div className="w-full max-w-[1400px] h-full bg-green-200 p-5 mt-5 rounded-xl flex flex-col gap-6">
+      <div className="w-full max-w-[1600px] h-full bg-green-200 p-5 mt-5 rounded-xl flex flex-col gap-6">
         {/* Main Content Row */}
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Section - Slogan, Heading, Form */}
@@ -70,7 +70,7 @@ const EleventhPage = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-start items-center gap-4 px-2">
             {/* Partners */}
             <div className="w-full flex flex-col justify-center items-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black font-semibold text-center mb-4">
                 Our Partners
               </h1>
               <div className="w-full border-b-2 border-black flex justify-evenly items-center flex-wrap gap-4 pb-4">
@@ -105,7 +105,10 @@ const EleventhPage = () => {
                   <ul className="space-y-1 sm:space-y-2 text-base sm:text-lg text-gray-600">
                     {section.items.map((item, i) => (
                       <li key={i}>
-                        <a href="#" className="hover:underline">
+                        <a
+                          href="#"
+                          className="hover:underline  hover:text-zinc-900 transition-colors duration-200"
+                        >
                           {item}
                         </a>
                       </li>

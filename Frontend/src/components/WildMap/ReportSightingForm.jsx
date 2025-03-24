@@ -4,7 +4,7 @@ const ReportSightingForm = ({ formData, setFormData, handleSubmit }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-5 bg-white p-4 rounded-lg shadow-md w-full max-w-xl mx-auto"
+      className="mt-5  bg-white p-4 rounded-lg flex flex-col items-center shadow-md w-full max-w-xl mx-auto"
     >
       <h3 className="text-xl font-semibold mb-2 text-center">
         Report a Sighting
@@ -25,12 +25,12 @@ const ReportSightingForm = ({ formData, setFormData, handleSubmit }) => {
         onChange={(e) =>
           setFormData({ ...formData, description: e.target.value })
         }
-        className="w-full p-3 mb-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+        className="w-full p-3 mb-3 border border-gray-300 rounded focus:outline-none focus:ring-2 resize-none focus:ring-green-500"
       />
 
       <button
         type="submit"
-        className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-all duration-300"
+        className="w-1/2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-all duration-300"
       >
         Submit Sighting
       </button>
