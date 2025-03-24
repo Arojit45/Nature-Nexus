@@ -19,7 +19,7 @@ const Firstpage = () => {
 
       {/* Hero Text */}
       <div className="absolute bottom-5  mt-5 h-[500px] flex justify-center items-center pt-2">
-        <h1 className="text-white font-kanit text-[3rem] sm:text-[2rem] md:text-[3.5rem] lg:text-[6rem] xl:text-[9rem]">
+        <h1 className="text-white font- text-[3rem] sm:text-[2rem] md:text-[3.5rem] lg:text-[6rem] xl:text-[9rem]">
           Nature Needs You.
         </h1>
       </div>

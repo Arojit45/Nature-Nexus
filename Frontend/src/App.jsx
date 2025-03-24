@@ -10,6 +10,7 @@ import About from "./components/About/About";
 import RecentNews from "./components/Blog/RecentNews";
 import LocomotiveScroll from "locomotive-scroll";
 import ProjectPage from "./components/Projects/ProjectPage";
+import Signup from "./components/signup/signup";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/news" element={<RecentNews />} />
         <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

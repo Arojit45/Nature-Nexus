@@ -32,7 +32,7 @@ const footerLinks = [
 const EleventhPage = () => {
   const [showForm, setShowForm] = useState(false);
   return (
-    <div className="w-full  min-h-screen p-4 sm:p-6 flex justify-center items-center bg-[#F2F1F6]">
+    <div  className="w-full  min-h-screen p-4 sm:p-6 flex justify-center items-center bg-[#F2F1F6]">
       <div className="w-full max-w-[1600px] h-full bg-green-200 p-5 mt-5 rounded-xl flex flex-col gap-6">
         {/* Main Content Row */}
         <div className="flex flex-col lg:flex-row gap-6">

@@ -57,9 +57,11 @@ const Nav = (textcolor) => {
       </div>
 
       {/* Right: Button (hidden on mobile) */}
+      <Link to={"/signup"}>
       <div className="hidden md:block text-black text-sm sm:text-base md:text-lg">
         <Button title="Connect with us" />
       </div>
+      </Link>
 
       {/* Hamburger Icon for Small Screens */}
       <div className="md:hidden text-black text-2xl cursor-pointer">
