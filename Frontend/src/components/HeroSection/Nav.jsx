@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <div
-      className="w-full px-6 py-5 flex justify-between items-center "
+      className="w-full px-6  py-5 flex justify-between items-center "
       style={{ fontFamily: "Kanit, sans-serif" }}
     >
       {/* Left: Logo */}
@@ -33,14 +33,17 @@ const Nav = () => {
 
       {/* Middle: Nav links (hidden on small) */}
       <div className="hidden md:flex links text-black gap-10 text-sm sm:text-base md:text-lg items-center">
+        <Link to="/" className="links">
+          Home
+        </Link>
         <Link to="#what-we-do" className="links">
           What We Do
         </Link>
-        <Link to="#" className="links">
-          Get Involved
+        <Link to="/adopt" className="links">
+          Adopt
         </Link>
-        <Link to="#" className="links">
-          About Us
+        <Link to="/dashboard" className="links">
+          Dashboard
         </Link>
         <Link to="/wildmap" className="links">
           Map

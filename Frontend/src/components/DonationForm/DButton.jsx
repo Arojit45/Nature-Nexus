@@ -10,7 +10,7 @@ const DButton = () => {
           className="relative z-10 w-full h-full text-sm sm:text-base  md:text-lg font-semibold text-black group-hover:text-white px-2 flex
        justify-center items-center transition duration-200 active:scale-95"
         >
-          Donate Now!
+          Donate Now
         </button>
       </Link>
       <span

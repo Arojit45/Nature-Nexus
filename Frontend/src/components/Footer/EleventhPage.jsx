@@ -60,7 +60,7 @@ const EleventhPage = () => {
               </h1>
 
               {/* Form */}
-              <div className="w-[80%] sm:w-[60%] md:w-[50%] absolute top-[75%] left-1/2 -translate-x-1/2">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md">
                 {showForm && <Form />}
               </div>
             </div>

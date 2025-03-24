@@ -1,73 +1,77 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import natureCover from "../../assets/forest.jpg";
-// import Snow from "../../assets/snowleopard.jpg";
-// import Forest from "../../assets"
-// import Card from "../../lib/Card";
+import React from "react";
+import missionImage from "../../assets/Forest12.jpg";
+import impactImage from "../../assets/cleanRiver.jpg";
+import teamImage from "../../assets/work2.jpg";
+import Nav from "../HeroSection/Nav";
 
-// // Animation variants
-// const fadeUp = {
-//   hidden: { opacity: 0, y: 40 },
-//   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-// };
+const About = () => {
+  return (
+    <div className="bg-gray-100 min-h-screen py-2 px-6">
+      {/* Page Header */}
+      <div className="text-center mb-12">
+        <Nav />
+      </div>
 
-// const About = () => {
-//   return (
-//     <div
-//       className="px-6 py-12 md:px-16 lg:px-10 bg-white text-gray-800 space-y-12"
-//       style={{ fontFamily: "Kanit, sans-serif" }}
-//     >
-//       <div className="w-full  flex flex-col bg-green-200 p-20 rounded-xl md:flex-row items-center gap-6">
-//         <img
-//           src={natureCover}
-//           alt="Nature Cover"
-//           className="w-full md:w-1/2 rounded-2xl shadow-lg"
-//         />
-//         <motion.div
-//           initial="hidden"
-//           whileInView="visible"
-//           viewport={{ once: true }}
-//           variants={fadeUp}
-//         >
-//           <h2 className="text-2xl font-semibold mb-3">Who We Are</h2>
-//           <p className="text-base md:text-lg leading-relaxed">
-//             Nature Nexus is a non-profit organization (NGO) committed to the
-//             protection of wildlife and the preservation of our environment.
-//             Founded by passionate environmentalists and conservationists, we
-//             work tirelessly to safeguard nature for future generations.
-//           </p>
-//         </motion.div>
-//       </div>
-//       <div className="w-full  flex  p-10 rounded-xl items-center gap-6">
-//         <div className="text-center flex flex-col">
-//           <h2 className="text-6xl text-center font-kanit">Mission</h2>
-//           <p className="text-justify text-[2px] ml-2 text-sm md:text-lg leading-relaxed max-w-3xl mx-auto">
-//             Our mission is to protect endangered wildlife, restore natural
-//             habitats, and raise awareness about environmental issues through
-//             action, education, and community engagement. We operate across
-//             forests, rivers, wetlands, and coastal areas—focusing on both
-//             immediate rescue and long-term conservation. From saving injured
-//             animals to reforesting damaged land, every effort we make brings us
-//             closer to a greener and safer planet.
-//           </p>
-//         </div>
-//         <img
-//           src={Snow}
-//           alt="Snow Leopard"
-//           className="w-[1000px] h-[400px] object-cover md:w-3/4 rounded-2xl shadow-lg"
-//         />
-//       </div>
-//       <div>
-//         <div>
-//           <Card
-//             imageUrl={Forest}
-//             title="Forest Conservation"
-//             description="We’ve launched reforestation missions in degraded areas by planting over 5,000 native trees, restoring habitats for wildlife and improving local air quality."
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+      {/* Mission Section */}
+      <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
+        <img
+          src={missionImage}
+          alt="Mission"
+          className="w-full md:w-1/2 rounded-xl shadow-md"
+        />
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-semibold text-green-600 mb-4">
+            Our Mission
+          </h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            We are on a mission to restore ecosystems, plant trees, rescue
+            wildlife, and build a sustainable future for all. Through
+            technology, innovation, and community engagement, we track and
+            transparently report every step of progress.
+          </p>
+        </div>
+      </div>
 
-// export default About;
+      {/* Impact Section */}
+      <div className="flex flex-col md:flex-row-reverse items-center gap-10 mb-16">
+        <img
+          src={impactImage}
+          alt="Impact"
+          className="w-full md:w-1/2 rounded-xl shadow-md"
+        />
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-semibold text-green-600 mb-4">
+            Our Impact
+          </h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            From planting thousands of trees to rescuing wildlife and restoring
+            habitats — our transparent, data-driven approach ensures that every
+            effort contributes to real change. Track everything live through our
+            Impact Dashboard.
+          </p>
+        </div>
+      </div>
+
+      {/* Team Section */}
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        <img
+          src={teamImage}
+          alt="Team"
+          className="w-full md:w-1/2 rounded-xl shadow-md"
+        />
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-semibold text-green-600 mb-4">
+            Our Community
+          </h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Behind every tree, every rescued animal, every data point — is a
+            team of passionate volunteers, engineers, scientists, and supporters
+            like you. Join our movement to create a lasting impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

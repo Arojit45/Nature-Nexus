@@ -4,8 +4,11 @@ import work2 from "../../assets/work2.jpg";
 import work3 from "../../assets/work3.webp";
 import work4 from "../../assets/work4.jpg";
 import Count from "./ScrollCounter";
+import Button from "../../lib/Button";
+import { Link } from "react-router-dom";
 
 const FifthPage = () => {
+  
   return (
     <div className="w-full bg-[#F2F1F6] p-2">
       <div className="min-h-screen gap-4 p-5 bg-green-200 mt-5 flex flex-col justify-between items-center rounded-xl">
@@ -78,9 +81,13 @@ const FifthPage = () => {
             />
           </div>
         </div>
+        <Link to={"/About"} className="w-full flex justify-center mt-4">
+          <div className="w-[200px] h-[50px] right-10">
+            <Button title={"About us"} />
+          </div>
+        </Link>
       </div>
     </div>
-   
   );
 };
 

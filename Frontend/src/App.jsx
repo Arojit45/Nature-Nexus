@@ -2,27 +2,26 @@ import React from "react";
 
 import LandingPage from "./components/LandingPage/Landingpage";
 import Form from "./components/DonationForm/Form";
-
+import AdoptAnimals from "./components/Adopt/AdoptAnimals";
 import { Route,  Routes } from "react-router-dom";
 import Wildmap from "./components/WildMap/Wildmap";
-// import About from "./components/About/about";
-// import LocomotiveScroll from "locomotive-scroll";
+import ImpactTracker from "./components/Dashboard/ImpactTracker";
+import About from "./components/About/about";
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
-  // const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/donation" element={<Form />} /> */}
-        {/* <Route path="/blog" element={<Blog />} /> */}
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/adopt" element={<AdoptAnimals />} />
         <Route path="/donation" element={<Form />} />
         <Route path="/wildmap" element={<Wildmap />} />
-        
-        {/* <Route path="/About" element={<About/>} /> */}
+        <Route path="/dashboard" element={<ImpactTracker />} />
+
+        <Route path="/About" element={<About/>} />
       </Routes>
     </div>
   );
