@@ -6,7 +6,7 @@ import AdoptAnimals from "./components/Adopt/AdoptAnimals";
 import { Route,  Routes } from "react-router-dom";
 import Wildmap from "./components/WildMap/Wildmap";
 import ImpactTracker from "./components/Dashboard/ImpactTracker";
-import About from "./components/About/about";
+import About from "./components/About/About";
 import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
@@ -20,7 +20,6 @@ const App = () => {
         <Route path="/donation" element={<Form />} />
         <Route path="/wildmap" element={<Wildmap />} />
         <Route path="/dashboard" element={<ImpactTracker />} />
-
         <Route path="/About" element={<About/>} />
       </Routes>
     </div>
