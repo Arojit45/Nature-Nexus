@@ -28,6 +28,8 @@ const dangerLevelIcons = {
 
 import { biodiversePlaces, endangeredSpeciesAreas } from "./Wildlifedata";
 import BiodiversityZones from "./BiodiversityZones";
+import { Link } from "react-router-dom";
+import Button from "../../lib/Button";
 
 const animalIcon = new L.Icon({
   iconUrl: "https://cdn-icons-png.flaticon.com/512/616/616408.png",
@@ -35,6 +37,7 @@ const animalIcon = new L.Icon({
 });
 
 const WildlifeMap = () => {
+
   const [sightings, setSightings] = useState([]);
   const [formLocation, setFormLocation] = useState(null);
   const [formData, setFormData] = useState({ species: "", description: "" });
@@ -122,7 +125,7 @@ const WildlifeMap = () => {
         </div>
 
         {/* Biodiversity Zones & Report Section */}
-        <div className="w-full md:w-1/3 bg-white relative flex flex-col items-center justify-center space-y-5 rounded-lg shadow-lg p-4 overflow-y-auto h-auto md:h-[95vh]">
+        <div className="w-full md:w-1/3 bg-white relative overflow-x-hidden p-3 flex flex-col items-center justify-center space-y-5 rounded-lg shadow-lg p-4 overflow-y-auto h-auto md:h-[95vh]">
           <h1 className="text-2xl sm:text-3xl font-kanit text-center">
             Biodiversity Hotspots in India
           </h1>
@@ -143,15 +146,25 @@ const WildlifeMap = () => {
           </div>
 
           {/* Report Sighting Button */}
-          <button
-            onClick={() => {
-              setFormLocation({ lat: 20.5937, lng: 78.9629 });
-              setShowForm(true);
-            }}
-            className="mt-auto w-[200px] h-10 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
-          >
-            Report a Sighting
-          </button>
+          <div className="flex p-2  gap-3 items-center">
+            <button
+              onClick={() => {
+                setFormLocation({ lat: 20.5937, lng: 78.9629 });
+                setShowForm(true);
+              }}
+              className="w-[200px] h-10 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+            >
+              Report a Sighting
+            </button>
+
+            <Link to="/">
+              <div className="h-10 sm:w-[250px] sm:h-[60px]">
+                <button className="w-[200px] h-10 bg-green-600 hover:bg-green-700 mt-2 text-white px-4 py-2 rounded">
+                  Back to Home
+                </button>
+              </div>
+            </Link>
+          </div>
         </div>
 
         {/* Form as a fixed bottom modal */}

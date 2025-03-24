@@ -31,7 +31,7 @@ const ImpactTracker = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 py-2 px-4">
+    <div className="min-h-screen bg-gray-100 p-4 ">
       {/* Dashboard Title */}
       <div className="text-center mb-8">
         <Nav />
@@ -54,10 +54,8 @@ const ImpactTracker = () => {
           {/* Content */}
           <div className="relative z-20 p-8 flex flex-col items-center justify-center h-full">
             <FaTree className="text-6xl text-black mb-4" />
-            <h3 className="text-2xl font-semibold text-black">
-              Trees Planted
-            </h3>
-            <p className="text-4xl font-bold text-white">
+            <h3 className="text-2xl font-semibold text-black">Trees Planted</h3>
+            <p className="text-4xl font-bold text-black">
               {stats.treesPlanted}
             </p>
 
@@ -76,22 +74,22 @@ const ImpactTracker = () => {
           <div
             className="absolute top-0 left-0 w-full h-full z-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://d1jyxxz9imt9yb.cloudfront.net/medialib/556/image/s768x1300/09-Bottlefeeding-Orphan-Elephant-Zambia.jpg')`,
+              backgroundImage: `url('https://d1jyxxz9imt9yb.cloudfront.net/medialib/5112/image/s768x1300/WR202407_ElephantCalf_002_651415_cropped.jpg')`,
             }}
           ></div>
 
           {/* Overlay for readability */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-0"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
 
           {/* Content on top of the background */}
-          <div className="relative z-10 text-center text-white">
+          <div className="relative z-10 text-center text-white ">
             <FaHandsHelping className="text-8xl mb-4" />
             <h3 className="text-4xl font-semibold">Wildlife Rescued</h3>
             <p className="text-4xl font-bold">{stats.wildlifeRescued}</p>
 
             <div className="w-[300px] flex gap-4 rounded-xl text-center items-center absolute top-[230px] h-[50px]">
               <DButton />
-              <button className="w-[300px] h-[50px] bg-green-200 rounded-xl border-2 border-black">
+              <button className="w-[300px] h-[50px] text-black bg-green-200 rounded-xl border-2 border-black">
                 Get Involve
               </button>
             </div>
@@ -108,12 +106,12 @@ const ImpactTracker = () => {
           }}
         >
           {/* Soft white overlay for readability */}
-          <div className="absolute inset-0 bg-white bg-opacity-50 z-10"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
 
           {/* Main Content */}
           <div className="relative z-20 p-8 flex flex-col items-center justify-center h-full">
-            <FaLeaf className="text-6xl text-black mb-4" />
-            <h3 className="text-2xl font-semibold text-black">
+            <FaLeaf className="text-6xl text-white mb-4" />
+            <h3 className="text-2xl font-semibold text-white">
               Habitats Restored
             </h3>
             <p className="text-4xl font-bold text-white">
@@ -147,7 +145,7 @@ const ImpactTracker = () => {
             <h3 className="text-2xl font-semibold text-black">
               Volunteers Recruited
             </h3>
-            <p className="text-4xl font-bold text-white">
+            <p className="text-4xl font-bold text-black">
               {stats.volunteersRecruited}
             </p>
 

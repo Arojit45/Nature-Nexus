@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Nav = () => {
+const Nav = (textcolor) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useGSAP(() => {
@@ -24,15 +24,21 @@ const Nav = () => {
       style={{ fontFamily: "Kanit, sans-serif" }}
     >
       {/* Left: Logo */}
-      <div className="flex items-center gap-2">
+      <div className="flex  items-center gap-2">
         <img src={logo} alt="logo" className="w-16 h-16 sm:w-20 sm:h-20" />
-        <h3 className="text-base sm:text-xl md:text-2xl font-semibold text-black">
+        <h3
+          className="text-base sm:text-xl md:text-2xl font-semibold"
+          style={{ color: textcolor }}
+        >
           Nature Nexus
         </h3>
       </div>
 
       {/* Middle: Nav links (hidden on small) */}
-      <div className="hidden md:flex links text-black gap-10 text-sm sm:text-base md:text-lg items-center">
+      <div
+        className="hidden md:flex links  gap-10 text-sm sm:text-base md:text-lg items-center"
+        style={{ color: textcolor }}
+      >
         <Link to="/" className="links">
           Home
         </Link>
@@ -72,14 +78,25 @@ const Nav = () => {
           >
             What We Do
           </Link>
-          <Link to="#" className="links" onClick={() => setMenuOpen(false)}>
-            Get Involved
+          <Link to="/" className="links" onClick={() => setMenuOpen(false)}>
+            Home
           </Link>
-          <Link to="#" className="links" onClick={() => setMenuOpen(false)}>
-            About Us
+          <Link
+            to="/adopt"
+            className="links"
+            onClick={() => setMenuOpen(false)}
+          >
+            Adopt
           </Link>
-          <Link to="#" className="links" onClick={() => setMenuOpen(false)}>
-            Membership & Giving
+          <Link
+            to="/dashboard"
+            className="links"
+            onClick={() => setMenuOpen(false)}
+          >
+            Dashboard
+          </Link>
+          <Link to="/wildmap" className="links" onClick={() => setMenuOpen(false)}>
+            Map
           </Link>
           <Button title="Connect with us" />
         </div>

@@ -37,9 +37,9 @@ const TenthPage = () => {
           <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="flex border-2 w-[110px] sm:w-[130px] md:w-[150px] active:scale-90 rounded-full justify-center items-center transition-transform duration-200"
+            className="flex border-2 border-black w-[110px] sm:w-[130px] md:w-[150px] active:scale-90 rounded-full justify-center items-center transition-transform duration-200"
           >
-            <button className="text-black text-xl sm:text-2xl md:text-3xl">
+            <button className="text-black shadow-xl text-xl sm:text-2xl md:text-3xl">
               Future
             </button>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../../lib/Button";
 
 const Card = ({ imageUrl, title, description }) => (
   <div className="bg-white shadow-lg rounded-xl overflow-hidden w-full sm:w-[45%] lg:w-[22%] transition-transform hover:scale-105 duration-300">
